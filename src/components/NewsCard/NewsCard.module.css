@@ -1,0 +1,144 @@
+/* NewsCard.module.css */
+
+.card {
+  background-color: #ffffff;
+  border: 1px solid #d3e2f5;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  margin-bottom: 20px;
+  transition: box-shadow 0.3s;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.card:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.title {
+  font-size: 18px;
+  color: #2c5686;
+  margin-bottom: 10px;
+  line-height: 1.2;
+}
+
+.title:visited {
+  color: #c1cfde;
+}
+
+.text {
+  margin: 0;
+  font-size: 14px;
+  line-height: 1.2;
+  color: #063163;
+  margin-bottom: 5px;
+  padding: 0;
+}
+
+.action {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.commentsButton {
+  background-color: #2c5686;
+  color: #ffffff;
+  border: none;
+  padding: 10px 10px;
+  border-radius: 4px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.commentsButton:hover {
+  background-color: #1e415d;
+}
+
+.likeButton {
+  background-image: url('../../images/like.svg');
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 20%;
+  background-position: 100%;
+  border: 0;
+  background-color: transparent;
+}
+
+.likeButton:hover {
+  cursor: pointer;
+  background-image: url('../../images/liked.svg');
+}
+
+.likedButton {
+  background-image: url('../../images/liked.svg');
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 20%;
+  background-position: 100%;
+  border: 0;
+  background-color: transparent;
+}
+
+.likedButton:hover {
+  cursor: pointer;
+  background-image: url('../../images/like.svg');
+}
+
+.comments {
+  margin-top: 10px;
+}
+
+.commentsTitle {
+  font-size: 16px;
+  color: #2c5686;
+  margin-bottom: 5px;
+}
+
+.commentsList {
+  list-style: none;
+  padding: 0;
+}
+
+.fullRow {
+  grid-column: 1 / -1; /* Занимаем все колонки */
+}
+
+.loadMoreButton {
+  background-color: #4b75a3;
+  color: #ffffff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 10px;
+  transition: background-color 0.3s ease;
+}
+
+.loadMoreButton:hover {
+  background-color: #3b5998;
+}
+
+.hideCommentsButton {
+  background-color: #4b75a3;
+  color: #ffffff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 10px;
+  position: fixed;
+  bottom: 60px;
+  right: 50%;
+  transform: translateX(50%);
+  z-index: 1000;
+  transition: background-color 0.3s ease, right 0.3s ease;
+}
+
+.hideCommentsButton:hover {
+  background-color: #3b5998;
+}

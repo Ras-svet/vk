@@ -1,0 +1,33 @@
+.list {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, 282px);
+	gap: 20px 17px;
+	margin: 0 auto;
+	justify-content: center;
+	margin-top: 51px;
+  list-style: none;
+  padding: 0;
+}
+
+@media screen and (max-width: 1000px) {
+	.list {
+		max-width: 700px;
+		justify-content: center;
+	}
+}
+
+@media screen and (max-width: 631px) {
+	.list {
+		max-width: 500px;
+		margin-top: 36px;
+    grid-template-columns: repeat(auto-fit, 500px);
+	}
+}
+
+@media screen and (max-width: 550px) {
+	.list {
+		max-width: 282px;
+		margin-top: 36px;
+    grid-template-columns: repeat(auto-fit, 282px);
+	}
+}
